@@ -1,0 +1,80 @@
+/* global variables to the theme */
+:root {
+  --background-color: #f2e5bc;
+  --text-color: #282828;
+  --link-color: #076678;
+}
+
+/* TODO: search how to add fonts */
+body {
+  font-family: "MesloLGL Nerd Font", -apple-system;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.2;
+  max-width: 1500px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  /* NOTE: retira o sublinhado do link */
+}
+
+a:hover {
+  color: #b57614;
+  text-decoration: underline;
+  /* NOTE: adiciona sublinhado ao passar o mouse*/
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  background-color: #f9f5d7;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  width: 150px;
+  height: 200px;
+  margin: 15px;
+  object-fit: cover;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.profile-info h1 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.profile-info h2 {
+  font-size: 1.1rem;
+  color: #504945;
+  margin-top: 0;
+  font-weight: normal;
+}
+
+.profile-info p {
+  margin-top: 0;
+  text-align: justify;
+}
+
+.profile-contact p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-contact a {
+  margin: 10px;
+}
