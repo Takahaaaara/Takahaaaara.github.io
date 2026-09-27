@@ -43,29 +43,20 @@ h2 {
   font-weight: normal;
 }
 
-@media (max-width:600px) {
-  .profile-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
-
-@media (max-width:600px) {
-  .profile-contact {
-    justify-content: center;
-  }
-}
-
-/*TODO: @media max-width para mudar o arranjo do academic card para flow*/
-
 .profile-card {
   display: flex;
   background-color: #f9f5d7;
   padding: 1rem;
   border-radius: 0.1rem;
   box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width:600px) {
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .profile-image {
@@ -90,15 +81,27 @@ h2 {
   flex-direction: row;
 }
 
+@media (max-width:600px) {
+  .profile-contact {
+    justify-content: center;
+  }
+}
+
 .profile-contact p {
   margin: 0;
 }
 
-/*TODO: make a grid to add a brief description*/
-
 .academic-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width:600px) {
+  .academic-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .academic-card {
@@ -110,6 +113,12 @@ h2 {
   padding: 10px;
   border-radius: 3px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width:600px) {
+  .academic-card {
+    align-items: center;
+  }
 }
 
 .academic-card h2 {
@@ -130,9 +139,15 @@ h2 {
   text-align: center;
 }
 
+@media (max-width:600px) {
+  .academic-paper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 .academic-paper-description {
   text-align: justify;
-  margin-left: 2rem;
 }
 
 /*TODO: create .html for each project -> gallary of photos and brief description*/
