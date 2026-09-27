@@ -11,7 +11,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.2;
-  max-width: 1500px;
+  max-width: 1000px;
   margin: 40px auto;
   padding: 0 20px;
 }
@@ -35,7 +35,7 @@ img {
 
 h1 {
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 }
 
 h2 {
@@ -45,37 +45,40 @@ h2 {
   font-weight: normal;
 }
 
+/*TODO: Responsive design, esta quebrando no modo celular (600px)*/
 .profile-card {
   display: flex;
-  align-items: center;
   background-color: #f9f5d7;
-  padding: 10px;
-  border-radius: 3px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 0.1rem;
+  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
 }
 
 .profile-image {
-  width: 150px;
-  height: 200px;
-  margin: 15px;
+  width: 15rem;
+  height: 20rem;
+  margin: 1.5rem;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   flex-shrink: 0;
 }
 
+.profile-info h1 {
+  margin-top: 1.5rem;
+}
+
 .profile-info p {
-  margin-top: 0;
+  margin-top: 1.5rem;
   text-align: justify;
 }
 
-.profile-contact p {
+.profile-contact {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
 }
 
-.profile-contact a {
-  margin: 10px;
+.profile-contact p {
+  margin: 0;
 }
 
 .academic-card {
@@ -89,11 +92,12 @@ h2 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/*TODO: nao usar viweport relative (vw) -> fazem em rem + responisve design*/
 .academic-image {
   object-fit: contain;
   flex-shrink: 0;
-  margin-left: 20rem;
-  margin-right: 20rem;
+  margin-left: 20vw;
+  margin-right: 20vw;
 }
 
 .academic-info {
@@ -111,6 +115,35 @@ h2 {
   font-weight: bold;
   text-align: center;
   font-size: 1.25rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 0vw;
+}
+
+.non-academic-container {
+  display: grid;
+  grid-template-columns: 200px 200px;
+}
+
+.non-academic-image {
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.non-academic-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.non-academic-info h2 {
+  text-decoration: underline dotted;
+  font-size: 1.5rem;
+}
+
+.non-academic-info p {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.25rem;
+  align-self: end;
 }
