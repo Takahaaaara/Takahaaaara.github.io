@@ -58,6 +58,8 @@ h2 {
   }
 }
 
+/*TODO: @media max-width para mudar o arranjo do academic card para flow*/
+
 .profile-card {
   display: flex;
   background-color: #f9f5d7;
@@ -93,6 +95,12 @@ h2 {
 }
 
 /*TODO: make a grid to add a brief description*/
+
+.academic-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .academic-card {
   margin-top: 1rem;
   display: flex;
@@ -104,34 +112,46 @@ h2 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.academic-image {
-  margin-left: 5rem;
-  margin-right: 5rem;
-  max-width: 100%;
-  height: auto;
-}
-
-.academic-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.academic-info h2 {
+.academic-card h2 {
   text-decoration: underline dotted;
   font-size: 1.5rem;
 }
 
-.academic-info p {
+.academic-paper img {
+  max-width: 100%;
+  height: auto;
+}
+
+.academic-paper p {
+  margin-top: 0;
   font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
   text-align: center;
-  font-size: 1.25rem;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  margin-top: 0vw;
+}
+
+.academic-paper-description {
+  text-align: justify;
+  margin-left: 2rem;
 }
 
 /*TODO: create .html for each project -> gallary of photos and brief description*/
+.non-academic-card {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f9f5d7;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.non-academic-card h2 {
+  text-decoration: underline dotted;
+  font-size: 1.5rem;
+}
+
 .non-academic-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -147,11 +167,6 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.non-academic-info h2 {
-  text-decoration: underline dotted;
-  font-size: 1.5rem;
 }
 
 .non-academic-info p {
