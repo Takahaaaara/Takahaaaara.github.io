@@ -1,13 +1,27 @@
 /* global variables to the theme */
 :root {
-  --background-color: #f2e5bc;
+  --background-color: #eeeeee;
   --text-color: #282828;
-  --link-color: #076678;
+  --link-color: #0543eb;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Commit Mono;
+  font-style: normal;
+  src: url(assets/fonts/commit-mono-latin-400-normal-8366ba2b2088257c4c85508855716c04.woff2);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Commit Mono;
+  font-style: bold;
+  src: url(assets/fonts/commit-mono-latin-700-normal-a65a3dd452e5ade813881569eec050b2.woff2);
 }
 
 /* TODO: search how to add fonts */
 body {
-  font-family: "MesloLGL Nerd Font", -apple-system;
+  font-family: "Commit Mono", "MesloLGL Nerd Font", -apple-system;
   background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.2;
@@ -22,7 +36,7 @@ a {
 }
 
 a:hover {
-  color: #b57614;
+  color: #ffd771;
   text-decoration: underline;
 }
 
@@ -34,21 +48,23 @@ img {
 h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  border-bottom: 1px solid;
 }
 
 h2 {
   font-size: 1.1rem;
-  color: #8f3f71;
+  color: #FF2898;
   margin-top: 0;
   font-weight: normal;
 }
 
 .profile-card {
   display: flex;
-  background-color: #f9f5d7;
+  background-color: #fafafa;
   padding: 1rem;
-  border-radius: 0.1rem;
-  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+  border-radius: 26px;
+  box-shadow: 0.5rem 0.6rem rgba(255, 40, 128, 0.2);
+  border: 1px solid;
 }
 
 @media (max-width:600px) {
@@ -94,13 +110,14 @@ h2 {
 .academic-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+  border-bottom: 1px solid;
 }
 
 @media (max-width:600px) {
   .academic-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
 
@@ -108,22 +125,16 @@ h2 {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-color: #f9f5d7;
+  background-color: #fafafa;
   padding: 10px;
-  border-radius: 3px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0.5rem 0.6rem rgba(3, 217, 103, 0.2);
+  border: 1px solid;
 }
 
-@media (max-width:600px) {
-  .academic-card {
-    align-items: center;
-  }
-}
 
 .academic-card h2 {
-  text-decoration: underline dotted;
   font-size: 1.5rem;
+  color: #03D967;
 }
 
 .academic-paper img {
@@ -143,11 +154,14 @@ h2 {
   .academic-paper {
     display: flex;
     flex-direction: column-reverse;
+    margin-top: 1rem;
   }
 }
 
 .academic-paper-description {
   text-align: justify;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 /*TODO: create .html for each project -> gallary of photos and brief description*/
@@ -156,31 +170,39 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #f9f5d7;
+  background-color: #fafafa;
   padding: 10px;
-  border-radius: 3px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0.5rem 0.6rem rgba(5, 67, 235, 0.2);
+  border: 1px solid;
 }
 
 .non-academic-card h2 {
-  text-decoration: underline dotted;
   font-size: 1.5rem;
+  color: #0543eb;
 }
 
+
 .non-academic-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .non-academic-image {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.non-academic-image:hover {
+  transform: scale(1.04);
 }
 
 .non-academic-info {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 2rem;
   justify-content: center;
 }
 
