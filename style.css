@@ -19,10 +19,11 @@
   src: url(assets/fonts/commit-mono-latin-700-normal-a65a3dd452e5ade813881569eec050b2.woff2);
 }
 
-/* TODO: search how to add fonts */
 body {
   font-family: "Commit Mono", "MesloLGL Nerd Font", -apple-system;
   background-color: var(--background-color);
+  background-image: linear-gradient(#e6e1de 1px, transparent 1px), linear-gradient(90deg, #e6e1de 1px, transparent 1px);
+  background-size: 40px 40px;
   color: var(--text-color);
   line-height: 1.2;
   max-width: 1200px;
@@ -58,9 +59,13 @@ h2 {
   font-weight: normal;
 }
 
+ul {
+  margin-top: 0;
+}
+
 .profile-card {
   display: flex;
-  background-color: #fafafa;
+  background-color: #ffffff;
   padding: 1rem;
   border-radius: 26px;
   box-shadow: 0.5rem 0.6rem rgba(255, 40, 128, 0.2);
@@ -125,16 +130,16 @@ h2 {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  background-color: #fafafa;
+  background-color: #ffffff;
   padding: 10px;
-  box-shadow: 0.5rem 0.6rem rgba(3, 217, 103, 0.2);
+  box-shadow: 0.5rem 0.6rem rgba(50, 205, 50, 0.2);
   border: 1px solid;
 }
 
 
 .academic-card h2 {
   font-size: 1.5rem;
-  color: #03D967;
+  color: #32CD32;
 }
 
 .academic-paper img {
@@ -164,13 +169,19 @@ h2 {
   margin-right: 1rem;
 }
 
+.academic-experience {
+  text-align: justify;
+  border-bottom: 1px solid;
+}
+
+
 /*TODO: create .html for each project -> gallary of photos and brief description*/
 .non-academic-card {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #fafafa;
+  background-color: #ffffff;
   padding: 10px;
   box-shadow: 0.5rem 0.6rem rgba(5, 67, 235, 0.2);
   border: 1px solid;
@@ -187,6 +198,7 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  border-bottom: 1px solid;
 }
 
 .non-academic-image {
