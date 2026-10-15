@@ -20,9 +20,14 @@
 }
 
 body {
-  font-family: "Commit Mono", "MesloLGL Nerd Font", -apple-system;
+  font-family:
+    "Commit Mono",
+    "MesloLGL Nerd Font",
+    -apple-system;
   background-color: var(--background-color);
-  background-image: linear-gradient(#e6e1de 1px, transparent 1px), linear-gradient(90deg, #e6e1de 1px, transparent 1px);
+  background-image:
+    linear-gradient(#e6e1de 1px, transparent 1px),
+    linear-gradient(90deg, #e6e1de 1px, transparent 1px);
   background-size: 40px 40px;
   color: var(--text-color);
   line-height: 1.2;
@@ -52,9 +57,29 @@ h1 {
   border-bottom: 1px solid;
 }
 
+.dropdown-btn {
+  align-items: center;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+
+  > svg {
+    rotate: 90deg;
+  }
+}
+.dropdown-btn.rotate {
+  > svg {
+    rotate: 270deg;
+  }
+}
+
 h2 {
   font-size: 1.1rem;
-  color: #FF2898;
+  color: #ff2898;
   margin-top: 0;
   font-weight: normal;
 }
@@ -72,7 +97,7 @@ ul {
   border: 1px solid;
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
   .profile-card {
     flex-direction: column;
     align-items: center;
@@ -102,7 +127,7 @@ ul {
   flex-direction: row;
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
   .profile-contact {
     justify-content: center;
   }
@@ -117,9 +142,24 @@ ul {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   border-bottom: 1px solid;
+  margin-bottom: 8px;
 }
 
-@media (max-width:600px) {
+.preview {
+  padding: 0;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 300ms ease-in-out;
+  > div {
+    overflow: hidden;
+  }
+}
+
+.preview.show {
+  grid-template-rows: 1fr;
+}
+
+@media (max-width: 600px) {
   .academic-container {
     display: flex;
     flex-direction: column;
@@ -136,10 +176,9 @@ ul {
   border: 1px solid;
 }
 
-
 .academic-card h2 {
   font-size: 1.5rem;
-  color: #32CD32;
+  color: #32cd32;
 }
 
 .academic-paper img {
@@ -155,7 +194,7 @@ ul {
   text-align: center;
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
   .academic-paper {
     display: flex;
     flex-direction: column-reverse;
@@ -174,7 +213,6 @@ ul {
   border-bottom: 1px solid;
 }
 
-
 /*TODO: create .html for each project -> gallary of photos and brief description*/
 .non-academic-card {
   margin-top: 1rem;
@@ -191,7 +229,6 @@ ul {
   font-size: 1.5rem;
   color: #0543eb;
 }
-
 
 .non-academic-container {
   display: flex;

@@ -1,122 +1,208 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script text="text/javascript" src="expand.js" defer></script>
+    <link rel="icon" type="image" href="assets/favicon/favicon.png" />
+    <title>Takahara dos Santos</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Takahara dos Santos</title>
-</head>
-
-<body>
-  <!-- Profile -->
-  <div class="profile-card">
-    <img src="assets/images/profileImage.jpeg" alt="My profile image" class="profile-image">
-
-    <div class="profile-info">
-      <h1>Takahara dos Santos</h1>
-      <h2>Undergraduate researcher</h2>
-      <p>
-        I'm a chemistry undergraduate student at the University of São Paulo (Brazil),
-        interested in automation and instrumentation.
-        Working at <a target="_blank" href="https://www.funiilab.com/">FuNIILab</a>
-        under supervision of <a target="_blank"
-          href="https://scholar.google.com/citations?user=do7ijcEAAAAJ&hl=en&oi=ao">Prof. Gabriel
-          N. Meloni</a>
-        developing low-cost instrumentation for education and research! <br>
-        Always starting a new project and collecting pieces of knowledge, from art to science.
-      </p>
-      <div class="profile-contact">
-        <a target="_blank" href="mailto:takahra.santos@usp.br">Email</a>
-        <p>|</p> <a target="_blank" href="https://orcid.org/0000-0002-8720-2507">ORCiD</a>
-        <p>|</p>
-        <a target="_blank" href="http://lattes.cnpq.br/4631673247175651">Lattes</a>
+  <body>
+    <!-- Profile -->
+    <div class="profile-card">
+      <img
+        src="assets/images/profileImage.jpeg"
+        alt="My profile image"
+        class="profile-image"
+      />
+      <div class="profile-info">
+        <h1>Takahara dos Santos</h1>
+        <h2>Undergraduate researcher</h2>
+        <p>
+          I'm a chemistry undergraduate student at the University of São Paulo
+          (Brazil), interested in automation and instrumentation. Working at
+          <a target="_blank" href="https://www.funiilab.com/">FuNIILab</a> under
+          supervision of
+          <a
+            target="_blank"
+            href="https://scholar.google.com/citations?user=do7ijcEAAAAJ&hl=en&oi=ao"
+            >Prof. Gabriel N. Meloni</a
+          >
+          developing low-cost instrumentation for education and research! <br />
+          Always starting a new project and collecting pieces of knowledge, from
+          art to science.
+        </p>
+        <div class="profile-contact">
+          <a target="_blank" href="mailto:takahra.santos@usp.br">Email</a>
+          <p>|</p>
+          <a target="_blank" href="https://orcid.org/0000-0002-8720-2507"
+            >ORCiD</a
+          >
+          <p>|</p>
+          <a target="_blank" href="http://lattes.cnpq.br/4631673247175651"
+            >Lattes</a
+          >
+        </div>
       </div>
     </div>
-  </div>
-  <!-- Academic -->
-  <div class="academic-card">
-    <h1>Academic</h1>
-    <h2>Current Projects</h2>
-    <div class="academic-container">
-      <div class="academic-paper">
-        <img src="assets/images/academic2.png">
-        <p>
-          Automating Scanning Electrochemical Microscopy: Decision Making in The Loop
+
+    <!-- Academic -->
+    <div class="academic-card">
+      <h1>Academic</h1>
+      <h2>Current Projects</h2>
+      <div class="academic-container">
+        <div class="academic-paper">
+          <img src="assets/images/academic2.png" />
+          <p>
+            Automating Scanning Electrochemical Microscopy: Decision Making in
+            The Loop
+          </p>
+        </div>
+        <p class="academic-paper-description">
+          This project proposes the development of an autonomous guidance system
+          for Scanning Electrochemical Microscopy (SECM) to improve efficiency
+          in the investigation of structures of interest. Conventional SECM
+          experiments require full-area scanning and post-acquisition data
+          processing, which is time-consuming when the structures are sparsely
+          distributed. The central objective is to integrate real-time
+          electrochemical simulations and control algorithms to enable adaptive
+          probe navigation.
         </p>
       </div>
-      <p class="academic-paper-description">
-        This project proposes the development of an autonomous guidance system for Scanning Electrochemical Microscopy
-        (SECM) to improve efficiency in the investigation of structures of interest. Conventional SECM experiments
-        require full-area scanning and post-acquisition data processing, which is time-consuming when the structures are
-        sparsely distributed. The central objective is to integrate real-time electrochemical simulations and control
-        algorithms to enable adaptive probe navigation.
-      </p>
+      <div class="academic-container">
+        <div class="academic-paper">
+          <a
+            target="_blank"
+            href="https://www.youtube.com/watch?v=KbyXJzT8yrc"
+            class="academic-image"
+          >
+            <img src="assets/images/academic1.png"
+          /></a>
+          <p>
+            Volumetric Titrations with (Non-)Visual Indicators: How Low-Cost
+            Assistive Technology Can Make Existing Experiments More Accessible
+          </p>
+        </div>
+        <div class="academic-paper-description">
+          <p>
+            This project proposes a framework that allows experiments that
+            depend on a specific sensory modality, such as volumetric
+            titrations, to be translated into other sensory stimuli, such as
+            sound, and used to support accessible education in accordance with
+            the principles of Universal Design for Learning.
+          </p>
+        </div>
+      </div>
+      <button onclick="togglePreview(this)" class="dropdown-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#000"
+        >
+          <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+        </svg>
+      </button>
+      <ul class="preview">
+        <div>
+          <h2>Experience</h2>
+          <div class="academic-experience">
+            <ul>
+              <li>
+                B. Sc. Chemistry, University of Sao Paulo, 2022 - Present, IC
+                FAPESP Fellowship
+              </li>
+              <li>
+                Reseaech Intern at University of Illinois Urbana-Champaing,
+                2026, BEPE FAPESP Fellowship
+              </li>
+              <li>
+                Teacher Assistant at State School Major Arcy - 2022 - 2023,
+                PIBID Fellowship
+              </li>
+              <li>
+                Poster Presentation, 48<sup>th</sup> Brazilian Chemical Society
+                Annual Meeting, 2025, Best Analytical Poster
+              </li>
+
+              <li>
+                Poster Presentation, 33<sup>th</sup> USP International Symposium
+                of Undergraduate Research, 2025, Honor Mention
+              </li>
+              <li>
+                Poster Presentation, XXV Brazilian Symposium on
+                Electrochemistry, 2025
+              </li>
+              <li>Panel Discussion, VI IQ-USP Congress, 2024</li>
+            </ul>
+          </div>
+        </div>
+      </ul>
+      <!-- TODO:Expand card animation: just show the 1st container and a down arrow button to expand the card-->
     </div>
-    <div class="academic-container">
-      <div class="academic-paper">
-        <a target="_blank" href="https://www.youtube.com/watch?v=KbyXJzT8yrc" class="academic-image">
-          <img src="assets/images/academic1.png"></a>
-        <p>
-          Volumetric Titrations with (Non-)Visual Indicators: How Low-Cost Assistive Technology Can Make Existing
-          Experiments More Accessible
-        </p>
+    <!-- Non-Academic -->
+    <!-- TODO: Add .html file for each project -->
+    <div class="non-academic-card">
+      <h1>Non-Academic</h1>
+      <h2>Current Projects</h2>
+      <div class="non-academic-container">
+        <div class="non-academic-info">
+          <img
+            src="assets/images/nonAcademic1.jpeg"
+            class="non-academic-image"
+          />
+          <p>Crochet</p>
+        </div>
+        <div class="non-academic-info">
+          <img
+            src="assets/images/nonAcademic2.jpeg"
+            class="non-academic-image"
+          />
+          <p>Programming</p>
+        </div>
       </div>
-      <div class="academic-paper-description">
-        <p>
-          This project proposes a framework that allows experiments that depend on a specific sensory modality, such as
-          volumetric titrations, to be translated into other sensory stimuli, such as sound, and used to support
-          accessible education in accordance with the principles of Universal Design for Learning.
-        </p>
-      </div>
-    </div>
-    <h2>Experience</h2>
-    <div class="academic-experience">
-      <ul>
-        <li> B. Sc. Chemistry, University of Sao Paulo, 2022 - Present, IC FAPESP Fellowship </li>
-        <li> Reseaech Intern at University of Illinois Urbana-Champaing, 2026, BEPE FAPESP Fellowship </li>
-        <li> Teacher Assistant at State School Major Arcy - 2022 - 2023, PIBID Fellowship </li>
-        <li> Poster Presentation, 48<sup>th</sup> Brazilian Chemical Society Annual Meeting, 2025, Best Analytical
-          Poster
-        <li> Poster Presentation, 33<sup>th</sup> USP International Symposium of Undergraduate Research, 2025, Honor
-          Mention </li>
-        <li> Poster Presentation, XXV Brazilian Symposium on Electrochemistry, 2025</li>
-        <li> Panel Discussion, VI IQ-USP Congress, 2024</li>
+      <button onclick="togglePreview(this)" class="dropdown-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#000"
+        >
+          <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+        </svg>
+      </button>
+      <ul class="preview">
+        <div>
+          <h2>Projects</h2>
+          <div class="non-academic-container">
+            <div class="non-academic-info">
+              <img
+                src="assets/images/nonAcademic3.png"
+                class="non-academic-image"
+              />
+              <p>CANiL</p>
+            </div>
+            <div class="non-academic-info">
+              <img
+                src="assets/images/nonAcademic4.jpg"
+                class="non-academic-image"
+              />
+              <p>SinDJ-USP</p>
+            </div>
+            <div class="non-academic-info">
+              <img
+                src="assets/images/nonAcademic5.jpeg"
+                class="non-academic-image"
+              />
+              <p>VJ</p>
+            </div>
+          </div>
+        </div>
       </ul>
     </div>
-    <!-- TODO:Add academic experience-->
-  </div>
-  <!-- Non-Academic -->
-  <!-- TODO: Add .html file for each project -->
-  <div class="non-academic-card">
-    <h1>Non-Academic</h1>
-    <h2>Current Projects</h2>
-    <div class="non-academic-container">
-      <div class="non-academic-info">
-        <img src="assets/images/nonAcademic1.jpeg" class="non-academic-image">
-        <p>Crochet</p>
-      </div>
-      <div class="non-academic-info">
-        <img src="assets/images/nonAcademic2.png" class="non-academic-image">
-        <p>Programming</p>
-      </div>
-    </div>
-    <h2>Projects</h2>
-    <div class="non-academic-container">
-      <div class="non-academic-info">
-        <img src="assets/images/nonAcademic3.png" class="non-academic-image">
-        <p>CANiL</p>
-      </div>
-      <div class="non-academic-info">
-        <img src="assets/images/nonAcademic4.jpg" class="non-academic-image">
-        <p>SinDJ-USP</p>
-      </div>
-      <div class="non-academic-info">
-        <img src="assets/images/nonAcademic5.JPG" class="non-academic-image">
-        <p>VJ</p>
-      </div>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
