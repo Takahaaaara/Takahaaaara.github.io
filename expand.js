@@ -1,4 +1,4 @@
 function togglePreview(button) {
-  button.nextElementSibling.classList.toggle("show");
+  button.previousElementSibling.classList.toggle("show");
   button.classList.toggle("rotate");
 }

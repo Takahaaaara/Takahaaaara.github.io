@@ -209,6 +209,7 @@ ul {
 }
 
 .academic-experience {
+  padding-bottom: 16px;
   text-align: justify;
   border-bottom: 1px solid;
 }
@@ -246,7 +247,7 @@ ul {
 }
 
 .non-academic-image:hover {
-  transform: scale(1.04);
+  cursor: pointer;
 }
 
 .non-academic-info {
