@@ -162,6 +162,12 @@ ul {
 @media (max-width: 600px) {
   .academic-container {
     display: flex;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    text-align: center;
+
     flex-direction: column;
   }
 }
@@ -212,6 +218,9 @@ ul {
   padding-bottom: 16px;
   text-align: justify;
   border-bottom: 1px solid;
+  > ul {
+    padding: 20px;
+  }
 }
 
 /*TODO: create .html for each project -> gallary of photos and brief description*/
@@ -254,6 +263,9 @@ ul {
   display: grid;
   grid-template-rows: 1fr 2rem;
   justify-content: center;
+  > ul {
+    padding-inline-start: 0;
+  }
 }
 
 .non-academic-info p {
@@ -261,4 +273,28 @@ ul {
   text-align: center;
   font-size: 1.25rem;
   align-self: center;
+}
+
+.span {
+  display: grid;
+  position: relative;
+  border: 0;
+  padding: 0;
+  > span {
+    font-family: Commit Mono;
+    font-size: 1rem;
+    display: none;
+  }
+}
+.span.show {
+  > span {
+    display: block;
+    position: absolute;
+    max-width: 500px;
+    width: 100%;
+    background-color: #fff;
+    align-self: center;
+    text-align: justify;
+    border: 1px solid;
+  }
 }
