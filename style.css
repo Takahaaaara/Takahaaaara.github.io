@@ -290,11 +290,14 @@ ul {
   > span {
     display: block;
     position: absolute;
-    max-width: 500px;
+    padding: 5px;
+    right: -5px;
+    height: 100%;
     width: 100%;
     background-color: #fff;
-    align-self: center;
+    align-self: stretch;
     text-align: justify;
     border: 1px solid;
+    box-shadow: 0.5rem 0.6rem rgba(5, 67, 235, 0.2);
   }
 }
