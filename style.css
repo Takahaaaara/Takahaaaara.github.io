@@ -219,8 +219,17 @@ ul {
   text-align: justify;
   border-bottom: 1px solid;
   > ul {
-    padding: 20px;
+    padding-right: 0;
+    padding-left: 20px;
   }
+}
+li + li {
+  margin-top: 10px;
+}
+ul li::marker {
+  content: "· ";
+  font-size: 1rem;
+  color: var(--text-color);
 }
 
 /*TODO: create .html for each project -> gallary of photos and brief description*/
