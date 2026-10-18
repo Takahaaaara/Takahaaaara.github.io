@@ -8,14 +8,14 @@
 @font-face {
   font-display: swap;
   font-family: Commit Mono;
-  font-style: normal;
+  font-weight: 400;
   src: url(assets/fonts/commit-mono-latin-400-normal-8366ba2b2088257c4c85508855716c04.woff2);
 }
 
 @font-face {
   font-display: swap;
   font-family: Commit Mono;
-  font-style: bold;
+  font-weight: bold;
   src: url(assets/fonts/commit-mono-latin-700-normal-a65a3dd452e5ade813881569eec050b2.woff2);
 }
 
@@ -39,6 +39,7 @@ body {
 a {
   color: var(--link-color);
   text-decoration: none;
+  font-style: normal;
 }
 
 a:hover {
@@ -81,7 +82,7 @@ h2 {
   font-size: 1.1rem;
   color: #ff2898;
   margin-top: 0;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 ul {
@@ -163,8 +164,7 @@ ul {
   .academic-container {
     display: flex;
     margin-top: 0;
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: flex;
     text-align: center;
 
@@ -227,7 +227,7 @@ li + li {
   margin-top: 10px;
 }
 ul li::marker {
-  content: "· ";
+  content: "- ";
   font-size: 1rem;
   color: var(--text-color);
 }
@@ -299,14 +299,24 @@ ul li::marker {
   > span {
     display: block;
     position: absolute;
+    z-index: 10;
     padding: 5px;
     right: -5px;
     height: 100%;
     width: 100%;
     background-color: #fff;
-    align-self: stretch;
+    align-self: center;
     text-align: justify;
     border: 1px solid;
     box-shadow: 0.5rem 0.6rem rgba(5, 67, 235, 0.2);
+  }
+}
+@media (max-width: 600px) {
+  .span.show {
+    > span {
+      right: auto;
+      height: auto;
+      width: auto;
+    }
   }
 }
