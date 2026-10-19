@@ -1,0 +1,109 @@
+:root {
+  --background-color: #111;
+  --text-color: #eee;
+  --link-color: #ffd771;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Commit Mono;
+  font-weight: 400;
+  src: url(assets/fonts/commit-mono-latin-400-normal-8366ba2b2088257c4c85508855716c04.woff2);
+}
+
+body {
+  font-family:
+    "Commit Mono",
+    "MesloLGL Nerd Font",
+    -apple-system;
+  background-color: var(--background-color);
+  background-image:
+    linear-gradient(#222 1px, transparent 1px),
+    linear-gradient(90deg, #222 1px, transparent 1px);
+  background-size: 40px 40px;
+  color: var(--text-color);
+  line-height: 1.2;
+  max-width: 1200px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-style: normal;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  padding: 1rem;
+  margin: 10px;
+  border-radius: 26px;
+  border: 1px solid;
+  border-color: #fff;
+  > a {
+    color: #eee;
+  }
+}
+
+img {
+  max-width: 1000px;
+  height: auto;
+  margin: 20px;
+}
+@media (max-width: 600px) {
+  img {
+    max-width: 300px;
+  }
+}
+div {
+  max-width: 1200px;
+  &:nth-child(3n-1) {
+    box-shadow: 0.5rem 0.6rem rgb(50, 205, 50);
+  }
+  &:nth-child(3n-2) {
+    box-shadow: 0.5rem 0.6rem rgb(255, 40, 128);
+  }
+  &:nth-child(3n-3) {
+    box-shadow: 0.5rem 0.6rem rgb(5, 67, 235);
+  }
+}
+div + div {
+  margin-top: 20px;
+}
+@media (max-width: 600px) {
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
+  }
+}
+
+.head-card {
+  display: flex;
+  background-color: #000;
+  padding: 1rem;
+  border-radius: 26px;
+  border: 1px solid;
+  border-color: #fff;
+  margin-bottom: 20px;
+}
+
+.image-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  border: 1px solid;
+  border-color: #fff;
+}
