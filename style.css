@@ -232,7 +232,6 @@ ul li::marker {
   color: var(--text-color);
 }
 
-/*TODO: create .html for each project -> gallary of photos and brief description*/
 .non-academic-card {
   margin-top: 1rem;
   display: flex;

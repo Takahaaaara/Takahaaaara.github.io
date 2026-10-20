@@ -56,11 +56,11 @@ header {
 img {
   max-width: 1000px;
   height: auto;
-  margin: 20px;
+  margin: 10px;
 }
 @media (max-width: 600px) {
   img {
-    max-width: 300px;
+    max-width: 280px;
   }
 }
 div {
@@ -106,4 +106,9 @@ div + div {
   background-color: #000;
   border: 1px solid;
   border-color: #fff;
+  > p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
 }
